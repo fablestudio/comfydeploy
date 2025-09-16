@@ -2,20 +2,21 @@
   "$schema": "https://turborepo.com/schema.json",
   "ui": "tui",
   "tasks": {
-    "build": {
-      "dependsOn": ["^build"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**"]
-    },
-    "lint": {
-      "dependsOn": ["^lint"]
-    },
-    "check-types": {
-      "dependsOn": ["^check-types"]
-    },
     "dev": {
+      "dependsOn": ["migrate-local"],
       "cache": false,
       "persistent": true
+    },
+    "tunnel": {
+      "cache": false,
+      "persistent": true
+    },
+    "docker-compose": {
+      "cache": false,
+      "persistent": true
+    },
+    "migrate-local": {
+      "cache": false
     }
   }
 }

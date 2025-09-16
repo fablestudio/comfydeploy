@@ -1,0 +1,6 @@
+[submodule "apps/api"]
+	path = apps/api
+	url = https://github.com/comfy-deploy/api
+[submodule "apps/app"]
+	path = apps/app
+	url = https://github.com/comfy-deploy/app
