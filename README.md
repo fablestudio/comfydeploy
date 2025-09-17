@@ -74,7 +74,7 @@ We will continue supporting existing customers. At the same time we will start e
 ### Credits
 
 A list of credits that got us here (doesn't go in order)
-Comfy, Nick, Karrix, Jeff, Edgar, Ecjojo, Brad, Aashay and Semil, Jon, Choco, Modal, Vercel, Triton, Emmanuel, and many more.
+Comfy, Nick, Karrix, Jeff, Edgar, Ecjojo, Brad, Aashay and Semil, Jon, Choco, Modal, Vercel, Triton, Emmanuel, Julien, and many more.
 
 ---
 
