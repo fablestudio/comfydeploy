@@ -69,7 +69,7 @@ We will continue supporting existing customers. At the same time we will start e
 
 #### What I will be doing for the next couple days
 1. Documentation and tutorials to set up ComfyDeploy
-2. Explore what problems to solve that could resonate with us.
+2. Explore new problems that could resonate with us.
 
 ### Credits
 
