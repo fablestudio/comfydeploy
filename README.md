@@ -4,6 +4,8 @@ Re: Open-sourcing ComfyDeploy
 
 TL;DR: We are open-sourcing ComfyDeploy again, with full platform backend + frontend.
 
+[Discord](https://discord.gg/qtHUaVNRVM) | [Website](https://www.comfydeploy.com)
+
 ---
 
 ### How we got here?
