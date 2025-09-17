@@ -1,6 +1,6 @@
 [submodule "apps/api"]
 	path = apps/api
-	url = https://github.com/comfy-deploy/api
+	url = https://github.com/fablestudio/comfydeploy-api
 [submodule "apps/app"]
 	path = apps/app
-	url = https://github.com/comfy-deploy/app
+	url = https://github.com/fablestudio/comfydeploy-app
