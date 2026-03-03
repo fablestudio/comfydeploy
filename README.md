@@ -83,7 +83,7 @@ Comfy, Nick, Karrix, Jeff, Edgar, Ecjojo, Brad, Aashay and Semil, Jon, Choco, Mo
 Follow our journey on Twitter [@bennykokmusic](https://x.com/bennykokmusic)
 
 
-## Setup
+## Local Setup
 
 Make sure you have docker (orbstack), bun, and uv installed.
 
@@ -93,4 +93,96 @@ bun i
 
 ```
 bun run dev
+```
+
+Copy env example
+
+```
+cp apps/app/.env.example apps/app/.env
+cp apps/api/.env.example apps/api/.env
+```
+
+### API
+
+
+### S3
+```
+# S3 <Better use a hosted version for dev>
+SPACES_BUCKET_V2=
+SPACES_ENDPOINT_V2=
+SPACES_REGION_V2=
+SPACES_KEY_V2=
+SPACES_SECRET_V2=
+```
+
+### NGROK This is for tunneling, free account will do
+```
+NGROK_AUTHTOKEN=
+NGROK_DOMAIN=
+```
+
+### Setup a clerk account for auth, free acount will do
+```
+CLERK_PUBLIC_JWT_KEY=
+CLERK_SECRET_KEY=
+```
+
+### JWT Secret for API and secret
+```
+# generate using -> openssl rand -hex 32
+JWT_SECRET="test-secret-key"
+# python3 -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode('utf-8'))"
+SECRET_ENCRYPTION_KEY=
+```
+
+```
+GITHUB_TOKEN=github_pat_
+```
+
+You can actually use the same Redis server for all
+```
+UPSTASH_REDIS_META_REST_URL="http://localhost:8079"
+UPSTASH_REDIS_META_REST_TOKEN="example_token"
+
+UPSTASH_REDIS_REST_URL_LOG="http://localhost:8079"
+UPSTASH_REDIS_REST_TOKEN_LOG="example_token"
+
+UPSTASH_REDIS_REST_URL_REALTIME="http://localhost:8079"
+UPSTASH_REDIS_REST_TOKEN_REALTIME="example_token"
+
+REDIS_URL_LOG=redis://localhost:6379/0
+REDIS_URL_REALTIME=redis://localhost:6379/0
+```
+
+### CURRENT_API_URL
+Point to your ngrok url for local dev
+```
+CURRENT_API_URL="https://"
+```
+
+### Modal Env, setup a modal account, free account will do
+
+MODAL_ENVIRONMENT="main"
+MODAL_TOKEN_ID=""
+MODAL_TOKEN_SECRET=""
+
+
+## App
+
+```
+NEXT_PUBLIC_CD_API_URL=http://localhost:3011
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+NEXT_PUBLIC_NGROK_CD_API_URL=https://
+```
+
+### Cloud Component
+
+```
+Modal
+Neon for db
+Vercel for frontend -> App repo
+Backend for railway / any serverless / stateful server
+Clerk for auth
+Upstash for redis
+AWS S3 for storage
 ```
